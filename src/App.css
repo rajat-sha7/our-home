@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Manrope:wght@200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  font-family: 'plus jakarta sans';
+}
+
+
+
+/* Default Pagination Styles */
+.swiper-pagination {
+  position: absolute;
+  display: flex;
+  justify-content: left; /* Align left for larger screens */
+  align-items: center;
+  bottom: 20px;
+  width: 100%;
+}
+.swiper-wrapper{
+  padding-top: 100px;
+}
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  background-color: #1ad4d4;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+.swiper{
+  margin-top: 0px;
+}
+.swiper-pagination-bullet-active {
+  width: 30px !important;
+  background-color: #1ad4d4 !important;
+  display: inline-block !important;
+  border-radius: 1000px !important; 
+}
+
+.swiper-pagination-bullet:hover {
+  background-color: #1ad4d4;
+}
+
+
+@media screen and (max-width: 768px) {
+  .swiper-pagination {
+    justify-content: center; 
+  }
+}
